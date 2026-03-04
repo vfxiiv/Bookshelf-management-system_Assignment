@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Management System</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h3>Add New Books</h3>
+            <input type="text" id="text" placeholder="Please input a book name"/>
+            <button onclick="addingToFront()">Add Book to Front</button>
+            <button onclick="addingToEnd()">Add Book to End</button>
+        </div>
+
+        <div class="section">
+            <h3>Remove Books</h3>
+            <button class="remove-btn" onclick="removingfromFront()">Remove from Front</button>
+            <button class="remove-btn" onclick="removingFromEnd()">Remove from End</button>
+        </div>
+
+        <div class="section">
+            <h3>Current Book Shelf</h3>
+            <div id="bookList">
+                <ol id="books">
+
+                </ol>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
